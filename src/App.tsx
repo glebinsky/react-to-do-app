@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  Switch,
+  Route,
+} from 'react-router-dom'
+import Notes from './components/Notes/Notes.lazy'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>To Do App</h2>
       </header>
+      <main className="App-main">
+        <Switch>
+          <Route path='/'>
+            <Notes />
+          </Route>
+        </Switch>
+      </main>
     </div>
   );
 }
