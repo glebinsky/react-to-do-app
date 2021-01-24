@@ -1,1 +1,29 @@
-.Notes {}
+.Notes {
+  border: 2px solid white;
+  border-radius: 10px;
+  min-height: 400px;
+  width: 500px;
+  padding: 6px;
+}
+
+.NotesHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12px;
+}
+
+.NotesAddNote,
+.NotesTitle {
+  margin-top: 6px;
+}
+
+.NotesTitle {
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.NotesAddNote {
+  margin-top: 6px;
+  color: #61dafb;
+  text-transform: capitalize;
+}

@@ -1,0 +1,24 @@
+.AddNote {
+  width: 500px;
+}
+
+.AddNoteHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12px;
+}
+
+
+.AddNotesCancel,
+.AddNoteTitle {
+  margin-top: 6px;
+}
+
+.AddNoteTitle {
+  text-transform: uppercase;
+}
+
+.AddNoteCancel {
+  color: #61dafb;
+  text-transform: capitalize;
+}

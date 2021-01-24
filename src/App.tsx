@@ -3,8 +3,9 @@ import {
   Switch,
   Route,
 } from 'react-router-dom'
-import Notes from './components/Notes/Notes.lazy'
+import Notes from './components/Notes/Notes'
 import './App.css';
+import { NotesContext } from './NotesContext'
 
 function App() {
   return (
@@ -13,11 +14,13 @@ function App() {
         <h2>To Do App</h2>
       </header>
       <main className="App-main">
-        <Switch>
-          <Route path='/'>
-            <Notes />
-          </Route>
-        </Switch>
+        <NotesContext.Provider value={[]}>
+          <Switch>
+            <Route path='/'>
+              <Notes />
+            </Route>
+          </Switch>
+        </NotesContext.Provider>
       </main>
     </div>
   );

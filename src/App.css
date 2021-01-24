@@ -2,23 +2,21 @@
 
 
 .App {
-  text-align: center;
-  background-color: #282c34;
+  background-color: #181c24;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: yellow;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-family: monospace;
+  font-size: 14pt;
 }
 
 .App-header {
+  text-align: center;
   flex-basis: 40px;
 }
-/*
-.App-link {
-  color: #61dafb;
-} */
+
+.App-main,
+.App-header {
+  margin: 0 auto;
+}
