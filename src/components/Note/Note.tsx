@@ -1,11 +1,18 @@
 import React from 'react';
 import './Note.css';
-import { NoteInterface } from '../../NotesContext'
+import { NoteInterface, NotesContext } from '../../NotesContext'
 
-const Note: React.FC<NoteInterface> = ({ text, timestamp }) => (
-  <div className="Note" data-testid="Note">
-    Note Component
-  </div>
-);
+const Note = (props: { item: NoteInterface }) => {
+  const { item } = props
+  const { deleteNote } = React.useContext(NotesContext)
+
+  return (
+    <div className="Note" data-testid="Note">
+      <span className="NoteText">{item.text}</span>
+      <span className="NoteDate">{new Intl.DateTimeFormat('en-us').format(item.timestamp)}</span>
+      <button className="NoteDelete" onClick={() => deleteNote(item.id)}>delete</button>
+    </div>
+  )
+}
 
 export default Note;

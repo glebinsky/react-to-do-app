@@ -1,24 +1,35 @@
 .AddNote {
-  width: 500px;
-}
-
-.AddNoteHeader {
   display: flex;
   justify-content: space-between;
-  margin: 0 12px;
 }
 
-
-.AddNotesCancel,
-.AddNoteTitle {
-  margin-top: 6px;
+.AddNoteLabel {
+  text-transform: capitalize;
+  font-size: 12pt;
+  flex-basis: 44px;
 }
 
-.AddNoteTitle {
-  text-transform: uppercase;
+.AddNoteText {
+  width: 75%;
+  flex-basis: 300px;
+  opacity: .5;
+}
+
+.AddNoteSubmit {
+  flex-basis: 45px;
+  color: #61dafb;
 }
 
 .AddNoteCancel {
-  color: #61dafb;
+  color: #dc1e2f;
   text-transform: capitalize;
+  flex-basis: 60px;
+}
+
+.AddNoteCancel,
+.AddNoteSubmit {
+  font-family: inherit;
+  font-weight: bolder;
+  border: none;
+  background: transparent;
 }

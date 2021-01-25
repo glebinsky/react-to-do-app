@@ -1,1 +1,24 @@
-.Note {}
+.Note {
+  display: flex;
+}
+
+.NoteText {
+  flex-basis: 350px;
+  font-size: 11pt;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.NoteDate {
+  flex-basis: 85px;
+  font-size: 10pt;
+}
+
+.NoteDelete {
+  background: transparent;
+  border: none;
+  color: #dc1e2f;
+  text-transform: capitalize;
+  font-family: inherit;
+}

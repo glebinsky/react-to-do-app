@@ -6,15 +6,14 @@
   padding: 6px;
 }
 
+.NotesItems,
 .NotesHeader {
-  display: flex;
-  justify-content: space-between;
   margin: 0 12px;
 }
 
-.NotesAddNote,
-.NotesTitle {
-  margin-top: 6px;
+.NotesHeader {
+  display: flex;
+  justify-content: space-between;
 }
 
 .NotesTitle {
@@ -23,7 +22,16 @@
 }
 
 .NotesAddNote {
-  margin-top: 6px;
   color: #61dafb;
   text-transform: capitalize;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.NotesAddNote:hover {
+  cursor: pointer;
+}
+
+.NotesItems {
+
 }
